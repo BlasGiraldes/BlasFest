@@ -1,0 +1,105 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.lineup {
+    background-color: v.$rosa;
+    padding: 5rem 0;
+
+    h3 {
+        font-family: 'PT Sans', sans-serif;
+        font-weight: 700;
+        font-size: 12rem;
+        color: #ff0066;
+        text-align: center;
+        text-shadow: 4px 4px 4px #2bff00f8;
+        text-transform: uppercase;
+        text-decoration: dotted;
+
+
+    }
+
+    h3,
+    p {
+        text-align: center;
+        color: v.$blanco;
+    }
+
+    .dia {
+        text-transform: uppercase;
+        margin: 5rem 0;
+        font-size: 5rem;
+        text-shadow: 2px 2px black;
+
+    }
+}
+
+.escenario-contenedor {
+    @include m.tablet {
+        @include m.grid(2, 5rem);
+    }
+
+    p {
+        color: v.$negro;
+    }
+}
+
+.escenario {
+    padding-top: 2rem;
+
+    .nombre-escenario {
+        font-family: "Courier New", monospace;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 20rem;
+            height: 10rem;
+            background-size: 15rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin: 2rem auto 0 auto;
+        }
+    }
+}
+
+.pop .nombre-escenario:after {
+    background-image: url(../img/icono_edm.png);
+}
+
+.rock .nombre-escenario:after {
+    background-image: url(../img/icono_rock.png);
+}
+
+.calendario {
+
+    @include m.resetear-lista;
+
+    li {
+        padding: 2.5rem;
+        font-weight: 300;
+        font-family: sans-serif;
+        font-size: 18px;
+        margin: 1rem;
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+.bg-amarillo {
+    background-color: v.$amarillo;
+
+    li:nth-child(odd) {
+        background-color: darken(v.$amarillo, 15%);
+    }
+}
+
+.bg-verde {
+    background-color: v.$verde;
+
+    li:nth-child(odd) {
+        background-color: darken(v.$verde, 10%);
+    }
+}

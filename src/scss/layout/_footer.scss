@@ -1,0 +1,16 @@
+@use '../base/variables' as v;
+
+.site-footer {
+    padding: 1rem;
+    p {
+        margin: 0;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    a{
+        color: v.$morado;
+
+    }
+}
