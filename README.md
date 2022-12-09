@@ -8,6 +8,8 @@ En cuanto al desarrollo de la página web, me he basado principalmente en el uso
 
 En resumen, la página web que he desarrollado para el festival es una plataforma en línea donde se pueden encontrar todos los detalles sobre el evento, y que está basada en el uso de SCSS, HTML y JavaScript. Estoy seguro de que será una herramienta muy útil para todos los asistentes al festival, y espero que les guste tanto como a mí.
 
+https://lolablasuza.netlify.app/
+
  ![tinywow_2022-12-09 08-41-06_9440619](https://user-images.githubusercontent.com/81719352/206695719-781ecec0-ed16-43ef-bca5-3cd2a597f722.gif)
 
 "blasfest" cuenta con un perfomance del 93%
